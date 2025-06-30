@@ -1,0 +1,24 @@
+Relationships and Cardinalities
+Users (1) — (N) Reservations:
+One user can make many reservations; each reservation belongs to one user.
+
+Books (1) — (N) Reservations:
+One book can be reserved many times; each reservation is for one book.
+
+Users (1) — (N) Borrowed_Books:
+One user can borrow many books.
+
+Books (1) — (N) Borrowed_Books:
+One book can be borrowed many times.
+
+Books (1) — (N) Book_Copies:
+One book has multiple copies.
+
+Book_Copies (1) — (0..1) Borrowed_Books:
+Each borrowed book record is linked to a specific copy.
+
+Borrowed_Books (1) — (0..1) Fines:
+A borrowed book can have zero or one fine record if overdue.
+
+Users (N) — (1) Users_Roles:
+Each user has one role; roles have many users.

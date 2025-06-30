@@ -1,0 +1,56 @@
+/* Student Dashboard Styles */
+.student-dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+}
+
+.student-sidebar {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.student-content {
+    padding: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.book-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.book-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.text-warning {
+    color: #ffc107;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .student-dashboard {
+        grid-template-columns: 1fr;
+    }
+}

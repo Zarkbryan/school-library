@@ -1,0 +1,8 @@
+Entity	Attributes (Primary Key underlined)
+Users	user_id, username, password, name, email, role, profile_pic, created_at
+Books	book_id, title, author, description, cover_image, pdf_file, date_added, added_by (FK: Users.user_id)
+Reservations	reservation_id, user_id (FK), book_id (FK), reservation_date, pickup_date, status (pending, approved, rejected, cancelled)
+Borrowed_Books	borrow_id, user_id (FK), book_id (FK), borrow_date, due_date, return_date, status (borrowed, returned, overdue)
+Book_Copies	copy_id, book_id (FK), copy_number, status (available, reserved, borrowed, lost)
+Users_Roles	role_id, role_name (admin, librarian, student)
+Fines	fine_id, borrow_id (FK), amount, paid_status, fine_date

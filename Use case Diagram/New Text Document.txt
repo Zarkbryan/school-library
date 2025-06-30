@@ -1,0 +1,31 @@
+                  +--------------------+
+                  |      <<Actor>>     |
+                  |      Student       |
+                  +--------------------+
+                            |
+        -----------------------------------------------
+        |            |              |           |     |
+[Register/Login] [View Books] [Borrow Book] [Reserve Book]
+        |            |              |           |
+     [Return Book] [View Borrow History] [Cancel Reservation]
+
+
+                  +--------------------+
+                  |      <<Actor>>     |
+                  |     Librarian      |
+                  +--------------------+
+                            |
+        -----------------------------------------------
+        |           |            |             |       |
+ [Login]  [Add New Book] [Update Book] [View Borrowed] [Remove Book]
+
+
+                  +--------------------+
+                  |      <<Actor>>     |
+                  |       Admin        |
+                  +--------------------+
+                            |
+                    ---------------------
+                    |                   |
+               [Add Librarian]     [View System Logs]
+               [Remove Librarian] 
